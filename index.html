@@ -5,12 +5,54 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/bootstrap.min.css">
-    <link rel="stylesheet" href="css/dice_game.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="css/dice.css">
     <title>Dice game</title>
 </head>
 <body>
-    <div>
-
+    <div class="container min-vh-100 p-4">
+        <div class="row my-2 justify-content-center">
+            <div class="col-2">
+                <div class="d-grid">
+                    <button id="new-game"class="btn btn-primary text-uppercase p-2"><i class="bi bi-plus-circle"></i> NEW GAME</button>
+                </div>
+            </div>
+        </div>
+        <div class="row my-2 justify-content-center">
+            <div class="col-5">
+                <div class="col-12 my-5 text-center ">
+                    <h1 id="text-player-one"class="display-1 fw-bolder">PLAYER 1 <span></span></h1>
+                    <h1 id="totale-score-player-one" class="display-1 text-danger fw-bold">45</h1>
+                </div>
+            </div>
+            <div id="zone-dice" class="col-2 text-center align-self-end">
+                <i class="bi bi-dice-1"></i>
+            </div>
+            <div class="col-5">
+                <div class="row">
+                    <div class="col-12 my-5 text-center ">
+                        <h1 id="text-player-two"class="display-1 fw-bolder">PLAYER 2 <span></span></h1>
+                        <h1 id="totale-score-player-two" class="display-1 text-danger fw-bold">45</h1>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row my-2 justify-content-center">
+            <div class="col-3 mx-auto bg-danger text-center p-1">
+                <h2 class="display-5 fw-bold">current</h2>
+                <h2 id="current-score-player-one" class="display-5 fw-bold text-white">15</h2>
+            </div>
+            <div class="col-2">
+                <div class="d-grid justify-content-center h-100 gap-4">
+                    <button id="roll-dice" class="btn btn-primary text-uppercase" type="button"><i class="bi bi-arrow-clockwise"></i> Roll dice</button>
+                    <button id="hold-dice" class="btn btn-primary text-uppercase" type="button"><i class="bi bi-box-arrow-down"></i> Hold score</button>
+                </div>
+            </div>
+            <div class="col-3 mx-auto bg-danger text-center p-1">
+                <h2 class="display-5 fw-bold">current</h2>
+                <h2 id="current-score-player-two" class="display-5 fw-bold text-white">15</h2>
+            </div>
+        </div>
     </div>
     <script src="js/jquery-3.6.0.min.js"></script>
     <script src="js/dice.js"></script>
