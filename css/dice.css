@@ -2,7 +2,12 @@
 
 body{
     font-family: 'Lato', sans-serif;
+    background-image: linear-gradient(to right, #f3f6f4, #f3f6f4 50%, white 50%, white);
 }
 #zone-dice .bi{
     font-size:8em;
+}
+.icon-active{
+    font-size: 2em;
+    color: red;
 }
