@@ -22,7 +22,6 @@ $(document).ready(function () {
 
   /* function qui active le joueur */
   function activedPlayer () {
-    iconDice.html("<i class='bi bi-app'></i>")
     switch (curActivePlayer) {
       case 1:
         curActivePlayer = 2
@@ -46,6 +45,7 @@ $(document).ready(function () {
         currentScorePlayerTwo.text(curPlayerTwo)
         activePlayerOne.html('<i class="bi bi-circle-fill"></i>')
         activePlayerTwo.html('')
+        iconDice.html("<i class='bi bi-app'></i>")
         break
     }
   }
