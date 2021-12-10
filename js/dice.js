@@ -34,7 +34,7 @@ $(document).ready(function () {
         curActivePlayer = 1
         curPlayerTwo = 0
         currentScorePlayerTwo.text(curPlayerTwo)
-        activePlayerOne.html('<i class="bi bi-circle-fill"></i>')
+        activePlayerOne.html('&#11044;')
         activePlayerTwo.html('')
         break
       default:
@@ -43,7 +43,7 @@ $(document).ready(function () {
         totaleScorePlayerTwo.text(ttPlayerTwo)
         currentScorePlayerOne.text(curPlayerOne)
         currentScorePlayerTwo.text(curPlayerTwo)
-        activePlayerOne.html('<i class="bi bi-circle-fill"></i>')
+        activePlayerOne.html('&#11044;')
         activePlayerTwo.html('')
         iconDice.html("<i class='bi bi-app'></i>")
         break
@@ -75,11 +75,11 @@ $(document).ready(function () {
     if (ttPlayerOne >= 100 || ttPlayerTwo >= 100) {
       if (ttPlayerOne >= 100) {
         window.alert(
-          `Player1 win the game with${ttPlayerOne} points\nPlayer2 lose the game with${ttPlayerTwo} point(s)`
+          `Player 1 win the game with ${ttPlayerOne} points\nPlayer2 lose the game with ${ttPlayerTwo} point(s)`
         )
       } else if (ttPlayerTwo >= 100) {
         window.alert(
-          `Player1 win the game with${ttPlayerOne} points\nPlayer2 lose the game with${ttPlayerTwo} point(s)`
+          `Player 2 win the game with ${ttPlayerTwo} points\nPlayer 1 lose the game with ${ttPlayerOne} point(s)`
         )
       }
       const replay = window.confirm('Did you want to replay ?')
